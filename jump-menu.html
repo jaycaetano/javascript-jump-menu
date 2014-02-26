@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>JavaScript Jump Menu</title>
+  <meta name="description" content="Simple JavaScript Jump Menu">
+  <meta name="author" content="Jay Caetano">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <script type="text/JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</head>
+
+<body>
+
+<form name="form1" id="form1">
+  <select name="CSManuals_Volume1" onChange="MM_jumpMenu('parent',this,0)"  style="width:200px;">
+    <option value="http://www.google.com">Google</option>
+    <option value="http://www.bing.com">Bing</option>
+	  <option value="http://www.yahoo.com">Yahoo</option>
+	
+  </select>
+</form>
+ 
+</body>
+</html>
